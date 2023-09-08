@@ -1,1 +1,6 @@
-
+from.keras.preprocessing.image.ImageDataGenerator
+train_datagen = ImageDataGenerator(rescale=1./255, shear_range=0.2,zoom_range=0.2,horizontal_flip=True)
+#Image Data agumentation to the testing data
+test_datagen-ImageDataGenerator(rescale=1./255)
+x_train = train_datagen.flow_from_directory('../data/train_set', target_size=(64, 64), batch_size=5, color_mode='rgb',class_mode='categorical')
+Found 742 images belonging to 4 classes. Found 198 images belonging to 4 classes.
